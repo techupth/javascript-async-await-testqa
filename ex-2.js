@@ -1,5 +1,5 @@
 //Exercise #2
-let getJohnProfile = () => {
+let getJohnProfileXX = () => {
   return new Promise(function (_, reject) {
     setTimeout(
       () =>
