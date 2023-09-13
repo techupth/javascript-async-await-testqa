@@ -1,4 +1,4 @@
-//Exercise #3
+//Exercise 3
 let getJohnProfile = () => {
   return new Promise(function (resolve) {
     setTimeout(
@@ -33,3 +33,11 @@ let getJohnOrders = () => {
 };
 
 // Start coding here
+function displayReceivedData(data) {
+  console.log(data);
+}
+
+getJohnProfile()
+  .then(displayReceivedData)
+  .then(getJohnOrders)
+  .then(displayReceivedData);
