@@ -1,5 +1,5 @@
 //Exercise #2
-let getJohnProfileXX = () => {
+let getJohnProfile = () => {
   return new Promise(function (_, reject) {
     setTimeout(
       () =>
@@ -13,4 +13,13 @@ let getJohnProfileXX = () => {
 };
 
 // Start coding here
-let A
+
+function displayReceivedData(data) {
+  console.log(data);
+}
+
+function displayError(error) {
+  console.log(error);
+}
+
+getJohnProfile().then(displayReceivedData).catch(displayError);
